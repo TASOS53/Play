@@ -1,0 +1,14 @@
+/* Exercises */
+
+
+============================================================================================================
+1. Reading from standard input				(stdin; read;
+
+Folder: Projects/Play/C
+Program name: ex1.c
+
+Task: Read one character at a time from standard input and send it to standard output. Stop when EOF is received. 
+
+
+============================================================================================================
+2. 
