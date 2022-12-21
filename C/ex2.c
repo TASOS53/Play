@@ -22,5 +22,7 @@ int main () {
    } while(1);
 
    fclose(fp);
+
+   
    return(0);
 }
