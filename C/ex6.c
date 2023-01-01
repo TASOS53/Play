@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-   int equalP,equalF,i,position_p,position_f,j,k;
+   int equalP,equalF,i,position_p,position_f;
    int foundP=-1;
    int foundF=-1;
    
@@ -36,45 +36,25 @@ int main(int argc, char *argv[])
     if(foundF==0 && foundP==0)
     {
         printf("We found them both\n");
-
-        for(j=position_f+1; j<=argc-1; j++)
-        {
-            printf("%s\n",argv[j]); 
-                
-        }
-           
-         printf("That was the filename!\n");
+        printf("%s\n",argv[position_f+1]); 
+        printf("That was the filename!\n");
+        printf("%s\n",argv[position_p+1]); 
+        printf("That was the pathname!\n");       
         
-        for(k=position_p+1; k<=argc-1; j++)
-        {
-            printf("%s\n",argv[j]); 
-                
-        }
            
-         printf("That was the pathname!\n");
+         
     }
     else if (foundF==0 && foundP!=0)
     {
         printf("This is the filename!\n");
-
-        for(j=position_f+1; j<=argc-1; j++)
-        {
-            printf("%s\n",argv[j]); 
-                
-        }
+        printf("%s\n",argv[position_f+1]); 
            
     }
     else if (foundP==0 && foundF!=0)
     {
         printf("This is the Pathname!\n");
-
-        for(k=position_p+1; k<=argc-1; j++)
-        {
-            printf("%s\n",argv[j]); 
+        printf("%s\n",argv[position_p+1]); 
                 
-        }
-        
-        
     }
     else
     {
